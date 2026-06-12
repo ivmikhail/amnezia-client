@@ -58,7 +58,11 @@ cat > /opt/amnezia/xray/server.json <<EOF
     ],
     "outbounds": [
         {
-            "protocol": "freedom"
+            "protocol": "freedom",
+            "tag": "direct",
+            "settings": {
+                "domainStrategy": "UseIPv4"
+            }
         }
     ]
 }
